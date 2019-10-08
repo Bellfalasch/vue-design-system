@@ -46,10 +46,7 @@ export default {
     min-height: 100px;
     background-color: #ced3d8b9;
     margin: 20px -20px;
-    padding: 20px;
-  }
-  .warning {
-    border: 1px solid red;
+    padding: 20px 20px 8px 20px;
   }
   header p, header h3 {
     margin: 0;

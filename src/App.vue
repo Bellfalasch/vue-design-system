@@ -3,15 +3,37 @@
     <main>
       <img alt="Vue logo" src="./assets/logo.png">
       <InfoBox
+        type="info"
+        group="Group"
+        heading="This is an important message"
+        body="Lorem ipsum doler sit amet"
+      />
+      <InfoBox
         type="warning"
+        wide="true"
         group="The heading's heading"
         heading="Yolo"
         body="Lorem ipsum doler sit amet"
       />
       <InfoBox
         type="info"
+        wide="true"
         group="Group"
         heading="This is an important message"
+        body="Lorem ipsum doler sit amet"
+      />
+      <InfoBox
+        type="help"
+        wide="true"
+        group="Helpful advice"
+        heading="Stuck?"
+        body="Lorem ipsum doler sit amet"
+      />
+      <InfoBox
+        type="didyouknow"
+        wide="true"
+        group="Did you know?"
+        heading="Funny ..."
         body="Lorem ipsum doler sit amet"
       />
       <SinkBox
