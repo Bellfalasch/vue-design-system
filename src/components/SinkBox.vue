@@ -17,7 +17,7 @@
  * Toggle sink wrapper on or off?
  */
 export default {
-  name: 'InfoBox',
+  name: 'SinkBox',
   props: {
     type: {
       type: String,
@@ -40,7 +40,12 @@ export default {
 
 <style module>
   .root {
-    border: 1px solid black;
+    box-shadow:
+      inset 0px 10px 10px -10px rgba(0, 0, 0, 0.308),
+      inset 0px -10px 10px -10px rgba(0, 0, 0, 0.308);
+    min-height: 100px;
+    background-color: #ced3d8b9;
+    margin: 20px -20px;
     padding: 20px;
   }
   .warning {

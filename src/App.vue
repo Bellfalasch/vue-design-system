@@ -14,6 +14,12 @@
         heading="This is an important message"
         body="Lorem ipsum doler sit amet"
       />
+      <SinkBox
+        type="info"
+        group="Group"
+        heading="This is an important message"
+        body="Lorem ipsum doler sit amet"
+      />
       <HelloWorld msg="This be an elegant message"/>
     </main>
   </div>
@@ -22,12 +28,14 @@
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import InfoBox from './components/InfoBox.vue'
+import SinkBox from './components/SinkBox.vue'
 
 export default {
   name: 'app',
   components: {
     HelloWorld,
-    InfoBox
+    InfoBox,
+    SinkBox,
   }
 }
 </script>
@@ -41,7 +49,6 @@ html, body {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin: 0;
   padding: 60px 0 0 0;
@@ -53,5 +60,9 @@ main {
   max-width: 80%;
   margin: 0 auto;
   background-color: white;
+  padding: 20px;
+}
+p, h1, h2, h3, h4, li {
+  max-width: 80%;
 }
 </style>
