@@ -1,41 +1,55 @@
 <template>
   <div id="app">
     <main>
-      <img alt="Vue logo" src="./assets/logo.png">
-      <InfoBox
-        type="info"
-        group="Group"
-        heading="This is an important message"
-        body="Lorem ipsum doler sit amet"
-      />
-      <InfoBox
+      <!--<img alt="Vue logo" src="./assets/logo.png">-->
+
+      <InfoBox2
+        type="dontmiss"
+        group="Don't miss!"
+        heading="Rare item #2"
+      >
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad voluptatibus hic recusandae in repellat ratione exercitationem laborum cum esse aut molestias amet, <a href="#">molestiae placeat</a>, voluptatum et aliquid error inventore impedit?</p>
+      </InfoBox2>
+      <InfoBox2
         type="warning"
         wide="true"
         group="The heading's heading"
         heading="Yolo"
-        body="Lorem ipsum doler sit amet"
-      />
-      <InfoBox
-        type="info"
+      >
+        <p>A most <a href="#">critical thing</a> will happen that cannot be undone, please proceed with caution.</p>
+      </InfoBox2>
+      <InfoBox2
         wide="true"
         group="Group"
         heading="This is an important message"
-        body="Lorem ipsum doler sit amet"
-      />
-      <InfoBox
+      >
+        <p>This message is type-less, so it will render without colors. Lorem ipsum doler sit amet</p>
+        <hr />
+        <p>Divide <a href="#">a message</a> into sections.</p>
+      </InfoBox2>
+      <InfoBox2
         type="help"
         wide="true"
         group="Helpful advice"
         heading="Stuck?"
-        body="Lorem ipsum doler sit amet"
-      />
-      <InfoBox
+      >
+        <p>Lorem ipsum doler sit amet, Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repudiandae rerum commodi nam beatae, dicta sequi. Saepe voluptate eligendi tempora quia minus? Id quaerat ipsa placeat labore quis nam voluptate!</p>
+        <ol>
+          <li>We can <a href="#">add any HTML</a></li>
+          <li>Into this</li>
+        </ol>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet praesentium voluptatibus tempore laboriosam fuga nisi aliquid nostrum, esse vitae. Eos incidunt dolores veniam explicabo at harum consequatur, a dolore vitae.</p>
+      </InfoBox2>
+      <InfoBox2
         type="didyouknow"
         wide="true"
         group="Did you know?"
         heading="Funny ..."
-        body="Lorem ipsum doler sit amet"
-      />
+      >
+        <p>Lorem <a href="#">ipsum doler sit</a> amet</p>
+        <hr />
+        <p>Divide a message into sections.</p>
+      </InfoBox2>
       <SinkBox
         type="info"
         group="Group"
@@ -50,6 +64,7 @@
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import InfoBox from './components/InfoBox.vue'
+import InfoBox2 from './components/InfoBox2.vue'
 import SinkBox from './components/SinkBox.vue'
 
 export default {
@@ -57,6 +72,7 @@ export default {
   components: {
     HelloWorld,
     InfoBox,
+    InfoBox2,
     SinkBox,
   }
 }

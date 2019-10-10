@@ -1,34 +1,28 @@
 <template>
-  <div :class="{
-    [$style.root]: true,
+  <div class="infobox2" :class="{
     [$style.warning]: isWarning,
     [$style.didyouknow]: isDidyouknow,
+    [$style.dontmiss]: isDontMiss,
     [$style.help]: isHelp,
     [$style.wide]: wide,
   }">
-    <header>
-      <p><small>{{ group }}</small></p>
-      <h3>{{ heading }}</h3>
-    </header>
-    <p>{{ body }}</p>
+    <h6>{{ group }}</h6>
+    <h3>{{ heading }}</h3>
+    <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'InfoBox',
+  name: 'InfoBox2',
   props: {
-    type: {
-      type: String,
-      required: true,
-    },
+    type: String,
     wide: Boolean,
     group: {
       type: String,
       default: "Some topic",
     },
-    heading: String,
-    body: String,
+    heading: String
   },
   computed: {
     isWarning() {
@@ -37,6 +31,9 @@ export default {
     isDidyouknow() {
       return this.type === 'didyouknow'
     },
+    isDontMiss() {
+      return this.type === 'dontmiss'
+    },
     isHelp() {
       return this.type === 'help'
     }
@@ -44,18 +41,18 @@ export default {
 }
 </script>
 
-<style module>
-  .root {
+<style>
+  .infobox2 {
     padding: 20px 20px 8px 20px;
     border: none;
-    border-left: 5px solid rgb(231, 213, 107);
     border-radius: 8px;
-    background-color: #fefff1;
     margin: 20px 0;
     box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.05);
     width: 60%;
     float: right;
   }
+</style>
+<style module>
   .wide {
     width: auto;
     float: none;
@@ -69,14 +66,18 @@ export default {
     border-left: 5px solid rgb(104, 148, 214);
     background-color: #f1f4ff;
   }
+  .dontmiss {
+    border-left: 5px solid rgb(231, 213, 107);
+    background-color: #fefff1;
+  }
   .help {
     border-left: 5px solid rgb(104, 214, 190);
     background-color: #f1fffc;
   }
-  header p, header h3 {
+  p, h3, h6 {
     margin: 0;
   }
-  header small {
+  h6 {
     text-transform: uppercase;
     font-weight: bold;
     opacity: 0.65;
