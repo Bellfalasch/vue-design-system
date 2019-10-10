@@ -43,7 +43,7 @@ export default {
 
 <style>
   .infobox2 {
-    padding: 20px 20px 8px 20px;
+    padding: 20px 20px 20px 20px;
     border: none;
     border-radius: 8px;
     margin: 20px 0;
@@ -76,6 +76,14 @@ export default {
   }
   p, h3, h6 {
     margin: 0;
+    padding: 0;
+  }
+  p {
+    margin-top: 12px;
+    line-height: 140%;
+  }
+  p:first-child {
+    margin-top: 0;
   }
   h6 {
     text-transform: uppercase;
@@ -83,5 +91,19 @@ export default {
     opacity: 0.65;
     font-size: 0.7rem;
     letter-spacing: 1px;
+    margin-bottom: 3px;
+  }
+  hr {
+    height: 0;
+    border: none;
+    border-top: 3px solid rgba(68, 68, 68, 0.2);
+    margin: 0.95em 0;
+  }
+  ul, ol {
+    margin-left: 0;
+    padding-left: 20px;
+  }
+  li {
+    display: list-item;
   }
 </style>
