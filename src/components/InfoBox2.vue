@@ -53,27 +53,13 @@ export default {
   }
 </style>
 <style module>
-  .wide {
-    width: auto;
-    float: none;
-    clear: both;
-  }
-  .warning {
-    border-left: 5px solid rgb(214, 104, 104);
-    background-color: #fff1f1;
-  }
-  .didyouknow {
-    border-left: 5px solid rgb(104, 148, 214);
-    background-color: #f1f4ff;
-  }
-  .dontmiss {
-    border-left: 5px solid rgb(231, 213, 107);
-    background-color: #fefff1;
-  }
-  .help {
-    border-left: 5px solid rgb(140, 206, 198);
-    background-color: rgba(140, 206, 198, 0.30);
-  }
+:root {
+  --mog-turqoise: rgb(140, 206, 198); /* True FF9 Mog-turqouise */
+  --warning-red: rgb(214, 104, 104);
+  --attention-yellow: rgb(224, 203, 83);
+  --funfact-blue: rgb(104, 148, 214);
+}
+
   p, h3, h6 {
     margin: 0;
     padding: 0;
@@ -88,7 +74,7 @@ export default {
   h6 {
     text-transform: uppercase;
     font-weight: bold;
-    opacity: 0.65;
+    /*opacity: 0.65;*/
     font-size: 0.7rem;
     letter-spacing: 1px;
     margin-bottom: 3px;
@@ -98,6 +84,7 @@ export default {
     border: none;
     border-top: 3px solid rgba(68, 68, 68, 0.2);
     margin: 0.95em 0;
+    opacity: .45;
   }
   ul, ol {
     margin-left: 0;
@@ -105,5 +92,70 @@ export default {
   }
   li {
     display: list-item;
+    line-height: 140%;
   }
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 2px 3px;
+    border-radius: 2px;
+  }
+
+  .wide {
+    width: auto;
+    float: none;
+    clear: both;
+  }
+  .warning {
+    border-left: 5px solid var(--warning-red);
+    background-color: rgba(214, 104, 104, 0.3);
+  }
+    .warning a {
+      background-color: var(--warning-red);
+    }
+    .warning hr {
+      border-color: var(--warning-red);
+    }
+    .warning h6 {
+      color: var(--warning-red);
+    }
+  .didyouknow {
+    border-left: 5px solid var(--funfact-blue);
+    background-color: rgba(104, 148, 214, 0.2);
+  }
+    .didyouknow a {
+      background-color: var(--funfact-blue);
+    }
+    .didyouknow hr {
+      border-color: var(--funfact-blue);
+    }
+    .didyouknow h6 {
+      color: var(--funfact-blue);
+    }
+  .dontmiss {
+    border-left: 5px solid var(--attention-yellow);
+    background-color: #fefff1;
+  }
+    .dontmiss a {
+      background-color: var(--attention-yellow);
+    }
+    .dontmiss hr {
+      border-color: var(--attention-yellow);
+    }
+    .dontmiss h6 {
+      color: var(--attention-yellow);
+    }
+  .help {
+    border-left: 5px solid var(--mog-turqoise);
+    background-color: rgba(140, 206, 198, 0.30);
+  }
+    .help a {
+      background-color: var(--mog-turqoise);
+    }
+    .help hr {
+      border-color: var(--mog-turqoise);
+    }
+    .help h6 {
+      color: var(--mog-turqoise);
+    }
 </style>

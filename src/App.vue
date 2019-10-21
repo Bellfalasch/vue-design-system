@@ -9,6 +9,8 @@
         heading="Rare item #2"
       >
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad voluptatibus hic recusandae in repellat ratione exercitationem laborum cum esse aut molestias amet, <a href="#">molestiae placeat</a>, voluptatum et aliquid error inventore impedit?</p>
+        <hr />
+        <p>The end</p>
       </InfoBox2>
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem alias atque saepe necessitatibus quae rerum eos sunt enim, voluptatum provident illo earum quasi, possimus nisi, omnis quas suscipit ut doloribus.
       <InfoBox2
@@ -18,6 +20,14 @@
         heading="Yolo"
       >
         <p>A most <a href="#">critical thing</a> will happen that cannot be undone, please proceed with caution.</p>
+        <ul>
+          <li>Test something</li>
+          <li>Approve the <a href="#">things</a></li>
+          <li>Ship it all</li>
+        </ul>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius tempore <a href="#">consequatur</a> earum, asperiores mollitia, neque corporis, ea dolore inventore velit non accusantium nisi? Magni id placeat distinctio dolorum, ex autem!</p>
+        <hr/>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius tempore consequatur earum, asperiores mollitia, neque corporis, ea <a href="#">dolore inventore</a> velit non accusantium nisi? Magni id placeat distinctio dolorum, ex autem!</p>
       </InfoBox2>
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem alias atque saepe necessitatibus quae rerum eos sunt enim, voluptatum provident illo earum quasi, possimus nisi, omnis quas suscipit ut doloribus.
       <InfoBox2
@@ -37,11 +47,15 @@
         heading="Stuck?"
       >
         <p>Lorem ipsum doler sit amet, Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repudiandae rerum commodi nam beatae, dicta sequi. Saepe voluptate eligendi tempora quia minus? Id quaerat ipsa placeat labore quis nam voluptate!</p>
+        <hr/>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora inventore earum ex iste voluptates adipisci eveniet aut, itaque magni suscipit sequi alias repellendus quae, ratione reprehenderit similique ipsum impedit sunt?</p>
         <ol>
           <li>We can <a href="#">add any HTML</a></li>
           <li>Into this</li>
         </ol>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet praesentium voluptatibus tempore laboriosam fuga nisi aliquid nostrum, esse vitae. Eos incidunt dolores veniam explicabo at harum consequatur, a dolore vitae.</p>
+        <h4>Sub headings ... whatabout</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, reiciendis. Iure esse laboriosam distinctio! Iusto quidem saepe excepturi pariatur, molestiae repellendus necessitatibus voluptate?</p>
       </InfoBox2>
       <InfoBox2
         type="didyouknow"
