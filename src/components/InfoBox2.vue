@@ -89,6 +89,7 @@ export default {
   ul, ol {
     margin-left: 0;
     padding-left: 20px;
+    list-style-type: initial;
   }
   li {
     display: list-item;
@@ -99,7 +100,12 @@ export default {
     text-decoration: none;
     padding: 2px 3px;
     border-radius: 2px;
+    border: 2px solid transparent;
+    transition: border 300ms linear;
   }
+    a:hover, a:active, a:focus {
+      border-color: rgba(0,0,0,0.4);
+    }
 
   .wide {
     width: auto;
