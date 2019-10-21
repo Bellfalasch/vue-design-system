@@ -99,7 +99,7 @@ export default {
     color: white;
     text-decoration: none;
     padding: 2px 3px;
-    border-radius: 2px;
+    border-radius: 3px;
     border: 2px solid transparent;
     transition: border 300ms linear;
   }
@@ -140,7 +140,7 @@ export default {
     }
   .dontmiss {
     border-left: 5px solid var(--attention-yellow);
-    background-color: #fefff1;
+    background-color: rgba(224, 203, 83, 0.15);
   }
     .dontmiss a {
       background-color: var(--attention-yellow);
@@ -153,7 +153,7 @@ export default {
     }
   .help {
     border-left: 5px solid var(--mog-turqoise);
-    background-color: rgba(140, 206, 198, 0.30);
+    background-color: rgba(140, 206, 198, 0.20);
   }
     .help a {
       background-color: var(--mog-turqoise);
