@@ -71,8 +71,8 @@ export default {
     background-color: #fefff1;
   }
   .help {
-    border-left: 5px solid rgb(104, 214, 190);
-    background-color: #f1fffc;
+    border-left: 5px solid rgb(140, 206, 198);
+    background-color: rgba(140, 206, 198, 0.30);
   }
   p, h3, h6 {
     margin: 0;

@@ -2,7 +2,7 @@
   <div id="app">
     <main>
       <!--<img alt="Vue logo" src="./assets/logo.png">-->
-
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas illo minus dolor molestias sapiente natus omnis animi, eum, odit ea excepturi debitis quae explicabo quos quibusdam tempore eos totam rem?
       <InfoBox2
         type="dontmiss"
         group="Don't miss!"
@@ -10,6 +10,7 @@
       >
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad voluptatibus hic recusandae in repellat ratione exercitationem laborum cum esse aut molestias amet, <a href="#">molestiae placeat</a>, voluptatum et aliquid error inventore impedit?</p>
       </InfoBox2>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem alias atque saepe necessitatibus quae rerum eos sunt enim, voluptatum provident illo earum quasi, possimus nisi, omnis quas suscipit ut doloribus.
       <InfoBox2
         type="warning"
         wide="true"
@@ -18,8 +19,9 @@
       >
         <p>A most <a href="#">critical thing</a> will happen that cannot be undone, please proceed with caution.</p>
       </InfoBox2>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem alias atque saepe necessitatibus quae rerum eos sunt enim, voluptatum provident illo earum quasi, possimus nisi, omnis quas suscipit ut doloribus.
       <InfoBox2
-        wide="true"
+        :wide="!true"
         group="Group"
         heading="This is an important message"
       >
@@ -27,9 +29,10 @@
         <hr />
         <p>Divide <a href="#">a message</a> into sections.</p>
       </InfoBox2>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem alias atque saepe necessitatibus quae rerum eos sunt enim, voluptatum provident illo earum quasi, possimus nisi, omnis quas suscipit ut doloribus.
       <InfoBox2
         type="help"
-        wide="true"
+        :wide="!true"
         group="Helpful advice"
         heading="Stuck?"
       >
